@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dashboardautomation-450906",
+  "private_key_id": "940915d9f89c5451aa62249f94c062b6265ce3e7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDCKdxDVFtF7QpI\nmO7LNHaRS4X3ByBwwSb6yStit5bZr8PCFNLHROVwdGhef4BR+KzXcfTc4/Hekug9\ny9zttjlcfFSht8kT1JWwHOFtCuZ7DlJ+dgvQwMSCSNQgvlBZWH8GEHaVFfwjSnSC\n18kw/x3ybU0V2+W1+HfMLzvjoIO9ob5s3p03JHjPST0/2n+BX8AhfcDd/jygmIgt\nFm3n49PBKsHcssFf6igWE+q142Nydg+Ox/7hVYGhNNbMkh0pyOBeLSwYGefcm2JH\nrJn/wuaRpk2ydU1gqwwFTs4MijXncxbJB7jlQ4qMJ9t+Dk1ZHuaPAVxZzM6a0sEj\nIgTiABGXAgMBAAECggEAQRK/gA9LIdXubuNWkOMt48dAiEiqri+GDWITuNuX4rBe\nNvM8q01jajuRaS5pRs/FudU3ADsjKnno/SEQk9jRQ7ZltOeALDXAz0v2n1Gaal6j\n9j9A+X9JvPKEqc6u5irbM6Cb5Z5/KSLAhsOkadfu5PuN7MgMpl62Y8fm1gTLcmeo\nEFvfEpUw1f8tcaEBJPG9EPOXjgdK/fAURquPwZLV07Ht7bBeOEPmhSiCsrOtgMTo\nOahyOy2yd4XVsBuZ8LBv/VkwjHL+GzAX/izJQOkrKMJxberWCkTL34CocSwcdVb9\nQd7z3L4WuZA0BNwM8oJRKJn1rPavfqAekAC3RF8vZQKBgQDit6DTE9+zHhu9rM6x\nUJQmc5Zc7wqyLU5dNm++xp3+WKLa6gZ8NKeBN1cZD76nIIwomYWsuubvHqzY6ecP\nGhjRLYIFp2tW2tEpJCIWvYDs1+ttKtKO+1SeTMyuFpn0Fnqz1TjwpQLxo3DMucSX\nmb/2lUCHWztwDWlSp5aSWxWuuwKBgQDbPdi3fXKMgngvdAPLjqBq85aaO8K8C9Zs\ndPFOpBzX8uRp4vbRVp2+zaOayp0tgoFQh6JlUMshUXEjqpSDZXWluZdm09l08e/D\nLHi0V59fljKwpWxZe/HZQPGAlwGrHBOok3+lkBu5/w2UMcUcf7OOzTMx9Pot0AsK\nPCwcWn4Q1QKBgG55qm2Qrp36muv3TBTNPhPqmSeZ9+1Q9HGpeBRPdmedS2Y/SX+2\nrLTjgZadvHp1+rZB8Qh1XtjAatucRtJuFg/ADC6zITQGlotkpxPLrgo7QOZGSqoP\nwHEO3WIrc0OkvI/q478nuWKEERBBqZFyAz+mBPawNytn7Z2wOkgBCHTHAoGAeogy\nWzsNjmJM8ZiRlm78UUoa3dCQobCsAqnJQ/6M8FScPGHROGaEe2NLEPQ0rH7H704f\nASkKnnB6H0jzAAzwl9MGPz4fxzCApEBypbhjJnU3l2qdB9Yx8Q5O62N6Vzu18P2e\n1dWY6XcXC8BVPfxRSnp9JmqYeIpR4UKIFMCuvJECgYAzm3rPpq37Hl3JEX00BMAl\nprbp/gJZOlEpZr0gdi9nlZteSeyyTG7iNfk/EfY6WO3BctfK3g7uimAVILyHIZvB\n6sGa+A7IgwR19gbu+2StW17TZ6hn+cpTKnUSrRSbM96O/hFROBwvS7Wx6dDX+ikm\nOLhZJCEhbsoci4gGS1Gmhw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dashboard-service@dashboardautomation-450906.iam.gserviceaccount.com",
+  "client_id": "102360105459107083280",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dashboard-service%40dashboardautomation-450906.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
