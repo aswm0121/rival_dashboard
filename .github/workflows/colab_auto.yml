@@ -1,0 +1,21 @@
+name: Run Google Colab Notebook
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # 매일 오전 9시 실행
+  workflow_dispatch:
+
+jobs:
+  run-colab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: pip install google-auth google-auth-oauthlib google-api-python-client
+
+      - name: Execute Colab
+        run: |
+          curl -X POST -H "Authorization: Bearer ${{ secrets.COLAB_TOKEN }}" \
+          https://colab.research.google.com/drive/1i0HFk5Kf9xUQI0Ub9vsmrLltQJRYf_nk/execute
