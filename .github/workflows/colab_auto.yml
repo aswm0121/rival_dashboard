@@ -2,7 +2,7 @@ name: Run Google Colab Notebook
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 매일 오전 9시 실행 (UTC 기준, 한국시간 오전 9시는 '0 0 * * *'로 설정 필요)
+    - cron: '0 15 * * *'  # 매일 오전 9시 실행 (UTC 기준, 한국시간 오전 9시는 '0 0 * * *'로 설정 필요)
   workflow_dispatch:  # 수동 실행 버튼 제공
 
 jobs:
