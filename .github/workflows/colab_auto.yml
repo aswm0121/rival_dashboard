@@ -2,7 +2,7 @@ name: Run Google Colab Notebook
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # 매 30분마다 실행 # 매일 오전 9시 실행 (UTC 기준, 한국시간 오전 9시는 '0 0 * * *'로 설정 필요)
+    - cron:  '0 * * * *'  # 매 30분마다 실행
   workflow_dispatch:  # 수동 실행 버튼 제공
 
 jobs:
@@ -10,14 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+
+      - name: Authenticate with Google Cloud
+        uses: google-github-actions/auth@v1  # 최신 인증 액션 사용
+        with:
+          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
 
       - name: Setup Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
         with:
+          project_id: your-project-id  # 필요 시 프로젝트 ID 입력
           version: 'latest'
-          service_account_key: ${{ secrets.GOOGLE_CREDENTIALS }}
-          export_default_credentials: true
 
       - name: Install dependencies
         run: pip install google-auth google-auth-oauthlib google-api-python-client
@@ -26,3 +30,11 @@ jobs:
         run: |
           curl -X POST -H "Authorization: Bearer $(gcloud auth print-access-token)" \
           https://colab.research.google.com/drive/1i0HFk5Kf9xUQI0Ub9vsmrLltQJRYf_nk/execute
+
+# ⚠️ 수정된 내용:
+# 1. `google-github-actions/auth@v1`로 인증 방식 변경.
+# 2. `service_account_key`와 `export_default_credentials` 제거.
+# 3. `credentials_json`을 사용하여 Google Cloud 인증.
+# 4. `project_id`를 입력하거나 Google Cloud JSON 키에 포함되어 있으면 생략 가능.
+# 5. 최신 버전의 `actions/checkout@v3` 사용.
+
